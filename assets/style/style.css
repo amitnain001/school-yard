@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+@font-face {
+    font-family: 'Calibri';
+    src: url("../fonts/Calibri/Calibri.ttf");
+}
+
+* {
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--light-green);
+    font-family: 'Calibri';
+}
+
+:root {
+    --light-green: #78AF1A;
+    --green: #577E3A;
+    --white: #FFFFFF;
+    --black: #000000;
+    --font-xl: 40px;
+    --font-lg: 25px;
+    --font-md: 18px;
+    --font-sm: 16px;
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --font-xl: 37px;
+        --font-lg: 22px;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    :root {
+        --font-xl: 34px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    :root {
+        --font-xl: 30px;
+        --font-lg: 20px;
+        --font-md: 17px;
+        --font-sm: 15px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    :root {
+        --font-xl: 26px;
+        --font-lg: 18px;
+        --font-md: 16px;
+        --font-sm: 14px;
+    }
+}
+
+/* ================================== FONT SIZE START FROM HERE ========================== */
+
+.fs-sm {
+    font-size: var(--font-sm) !important;
+}
+
+.fs-md {
+    font-size: var(--font-md) !important;
+}
+
+.fs-lg {
+    font-size: var(--font-lg) !important;
+}
+
+.fs-xl {
+    font-size: var(--font-xl) !important;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.text-green {
+    color: var(--green) !important;
+}
+
+.bg-green {
+    background-color: var(--green) !important;
+}
+
+.ff-lilita {
+    font-family: 'Lilita One', "cursive";
+}
+
+.para-heading {
+    font-family: 'Lilita One', "cursive";
+    font-size: var(--font-lg);
+    font-weight: 400;
+}
+
+.main-heading {
+    font-family: 'Lilita One', "cursive";
+    font-size: var(--font-xl);
+    font-weight: 400;
+}
+
+.nav-btn {
+    border: none !important;
+    background: linear-gradient(97.54deg, #519816 -3.18%, #1F8447 67.44%);
+    padding: 12px 24px;
+    border-radius: 100px;
+    transition: all ease-in-out .4s;
+    position: relative;
+    z-index: 2;
+}
+
+.twiter-btn {
+    transition: all ease-in-out .4s;
+}
+
+.twiter-btn:hover {
+    transform: translateY(-8px);
+}
+
+.nav-btn::after {
+    content: " ";
+    width: 0;
+    height: 100%;
+    border-radius: 100px;
+    position: absolute;
+    left: 0px;
+    background-color: white;
+    top: 0px;
+    z-index: -1;
+    transition: all ease-in-out .4s;
+}
+
+.nav-btn:hover {
+    color: var(--green) !important;
+}
+
+.nav-btn:hover::after {
+    width: 100%;
+}
+
+.hero-section {
+    background: url('../images/png/hero-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-image {
+    transform: translateY(67px);
+}
+
+.nav-links {
+    padding: 0 !important;
+    display: inline-block;
+}
+
+.nav-links::after {
+    content: " ";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    transition: all ease-in-out .4s;
+}
+
+.nav-links:hover::after {
+    width: 100%;
+}
+
+/* ================================================= WHO WE ARE SECTION ===================================== */
+.whowe-section {
+    background: url("../images/png/whosec-img3.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 2px solid black;
+    z-index: 3;
+}
+
+.sun-img {
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+/* =========================================== OUR TEAM SECTION ======================================== */
+.our-team-p {
+    background-color: var(--green);
+    border-radius: 7px;
+    margin: 10px auto;
+}
+
+.our-team-section {
+    background: url("../images/png/our-team-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-student-img {
+    position: relative;
+    bottom: 50px;
+}
+
+.faq-row .accordion-button:not(.collapsed) {
+    color: var(--white);
+    background-color: var(--green);
+    box-shadow: none !important;
+    border-radius: 10px 10px 0px 0px !important;
+}
+
+.faq-row .accordion-button:focus {
+    z-index: 3;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.faq-row .accordion-button {
+    color: var(--white);
+    background-color: var(--green);
+    border-radius: 10px 10px 0px 0px !important;
+}
+
+.faq-row .accordion-item {
+    background-color: transparent !important;
+}
+
+.faq-row .accordion-body {
+    background-color: var(--white);
+    border-radius: 0px 0px 10px 10px !important;
+}
+
+.faq-row .accordion-button:not(.collapsed)::after {
+    background-image: url("../images/png/arrow-img.png");
+}
+
+.faq-row .accordion-button::after {
+    background-image: url("../images/png/arrow-img.png");
+}
+
+.faq-section {
+    z-index: 3;
+}
+
+.faq-tree-image {
+    left: 0px;
+    bottom: 50px;
+    z-index: -1;
+}
+
+/* ================================================= FOOTER SECTION ==================================== */
+
+.footer-section {
+    background: url("../images/png/footer-bg.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-image {
+    right: 0px;
+    bottom: 0px;
+}
+
+.footer-links {
+    position: relative;
+    transition: all ease-in-out .4s;
+}
+
+.footer-links::after {
+    content: " ";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: black;
+    left: 0px;
+    bottom: -2px;
+    transition: all ease-in-out .4s;
+}
+
+.footer-links:hover::after {
+    width: 100%;
+}
+
+.socail-link {
+    transition: all ease-in-out .4s;
+}
+
+.socail-link:hover {
+    transform: translateY(-7px);
+}
+
+@media (max-width: 1199.8px) {
+    .nav-btn {
+        padding: 7px 16px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .nav-btn {
+        padding: 5px 12px;
+    }
+
+    .hero-image {
+        transform: translateY(40px);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-image {
+        transform: translateY(33px);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .footer-section {
+        background: #A2C95B;
+    }
+}
+
+@media (min-width:1600px) {
+    .whowe-section {
+        min-height: 140vh;
+        display: flex;
+        align-items: center;
+    }
+}
